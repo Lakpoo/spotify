@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Spotify Profile</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/main.js" type="module"></script>
+    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+  </head>
+  <body>
+    <div class="">
+      <h1>Display your Spotify profile data</h1>
+
+      <section id="profile">
+        <h2>Logged in as <span id="displayName"></span></h2>
+        <span id="avatar"></span>
+        <ul>
+          <li>User ID: <span id="id"></span></li>
+          <li>Email: <span id="email"></span></li>
+          <li>Spotify URI: <a id="uri" href="#"></a></li>
+          <li>Link: <a id="url" href="#"></a></li>
+          <li>Profile Image: <span id="imgUrl"></span></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="playlists">
+      <h1>Your Spotify Playlists</h1>
+
+      <section id="playlists">
+        <h2>Playlists</h2>
+        <ul id="playlistContainer"></ul>
+      </section>
+    </div>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Recherche d'un son ..." />
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="results"></div>
+    <div id="player-container"></div>
+  </body>
+</html>
